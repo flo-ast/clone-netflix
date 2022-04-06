@@ -1,0 +1,103 @@
+
+@media(min-width:  885px) {
+
+    /****   Nav   ****/
+    .main-nav {
+        height: 40px;
+        background-color: var(--darkColor);
+
+        .nav-left {
+            width: 75%;
+            .logo {
+                width: 18%;
+                margin-left: 1.8rem;
+            }
+
+            .nav-scrolling { display: none; }
+
+            .nav-menu {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: static;
+                width: 100%;
+                height: 40px;
+                border-top: none;
+                background-color: transparent;
+
+                a {
+                    font-size: 0.9rem;
+                    margin-left: 1.7rem;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .nav-right {
+            margin-right: 2rem;
+
+            .nav-search { 
+                span { 
+                    font-size: 1.2rem; 
+                    i {
+                        vertical-align: initial;
+                    }
+                }
+            }
+            .nav-alert {
+                span { font-size: 1.5rem; }
+            }
+            .nav-account {
+                span { font-size: 1.5rem; }
+            }
+        }
+    }
+
+    /****   Header   ****/
+    .header {
+        
+        .section {
+            margin-left: 1rem;
+
+            h1 { font-size: 6vw; }
+            p { width: 50%; }
+
+            button { 
+                font-size: 1.125rem;
+                padding: 0.6rem 1.8rem;
+                margin-right: 0.2rem;
+
+                i {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        .aside {
+            bottom: 70px;
+        }
+    }
+
+    /****   Article   ****/
+    .article {
+        &-details {
+            top: -40px;
+
+            &-title { margin-left: 1rem; }
+
+            &-row {
+                margin-left: 1rem;
+                .row { width: 23vw; }
+            }
+        }
+    }
+
+    /****   Footer   ****/
+    .footer {
+        &-link {
+            ul li {
+                width: 25%;
+            }
+        }
+    }
+}

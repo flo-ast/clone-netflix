@@ -1,0 +1,237 @@
+.main-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(to top, transparent, var(--darkColor)); //JS au scroll de la page background-color : #000;
+    z-index: 1000;
+
+    .nav-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+
+        .logo {
+            width: 34%;
+
+           img { 
+               width: 100%; 
+               vertical-align: middle;
+            }
+        }
+
+        .nav-scrolling {
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 1.3rem;
+
+            &::after {
+                content: '\f0d7';
+                font-family: "Font Awesome 5 Free";
+                font-size: 1.4rem;
+                padding-left: 0.7rem;
+                vertical-align: middle;
+            }
+        }
+       
+        .nav-menu {
+            display: none; //JS au click
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 260px;
+            height: 242px;
+            border-top: 2px solid var(--lightColor);
+            background-color: var(--backgroundColor);
+            text-align: center;
+
+            a {
+               display: block;
+               font-size: 1.3rem;
+               font-weight: 600;
+               padding-top: 1.6rem;
+               padding-bottom: 1.6rem;
+
+                &:first-child::before {
+                    content: '\f0d8';
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 2rem;
+                    position: absolute;
+                    top: -16px;
+                    left: 120px;
+                    color: var(--lightColor);
+                }
+            }
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+
+        .nav-search { display: none;}
+
+        .nav-alert {
+            margin-right: 3rem;
+
+            span {
+                cursor: pointer;
+                font-size: 1rem;
+
+                i { vertical-align: text-top; }
+            }
+
+            .alert-details {
+                display: none; //JS au click
+                position: absolute;
+                top: 70px;
+                left: 10px;
+                width: 80%;
+                height: 402.2px;
+                border-top: 2px solid var(--lightColor);
+                border-bottom: 0.2px solid rgba(255, 255, 255, 0.158);
+                border-left: 0.2px solid rgba(255, 255, 255, 0.158);
+                background-color: var(--backgroundColor);
+                
+
+                span {
+                    font-size: 2rem;
+                    position: absolute;
+                    top: -20px;
+                    right: 2px;
+                    color: var(--lightColor);
+                }
+                
+                &-details {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    height: 400px;
+                    overflow-y: scroll;
+
+                    .detail {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1.6rem;
+                        border-bottom: 0.1px solid rgba(255, 255, 255, 0.158);
+
+                        .details-img {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            width: 33%;
+                            position: relative;
+        
+                            img {
+                                width: 75%;
+                                border-radius: 7px;
+                                opacity: 0.5;
+                            }
+        
+                            h3 {
+                                position: absolute;
+                                left: 1.2rem;
+                                text-transform: uppercase;
+                            }
+        
+        
+                        }
+        
+                        .details-text {
+                            width: 66%;
+        
+                            small{
+                                font-size: 1.2rem;
+                                color: rgba(255, 255, 255, 0.158);
+                            }
+        
+                        }
+                    }
+
+                }
+
+        
+            }
+
+        }
+
+        .nav-account {
+            margin-right: 1rem;
+
+            span {
+                cursor: pointer;
+                font-size: 1rem;
+
+                i { vertical-align: text-top; }
+            }                          
+            &-details {
+                display: none; //JS au click
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                width: 40%;
+                border-top: 2px solid var(--lightColor);
+                border-bottom: 0.2px solid rgba(255, 255, 255, 0.158);
+                border-left: 0.2px solid rgba(255, 255, 255, 0.158);
+                background-color: var(--backgroundColor);
+
+                span {
+                    font-size: 2rem;
+                    position: absolute;
+                    top: -20px;
+                    right: 2px;
+                    color: var(--lightColor);
+                }
+
+                .details {
+
+                    .accounts, 
+                    .direct, 
+                    .account, 
+                    .logout {
+                        border-bottom: 0.1px solid rgba(255, 255, 255, 0.158);
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+
+                        button {
+                            display: block;
+                            border: none;
+                            font-weight: 500;
+                            color: var(--lightColor);
+                            background-color: transparent;
+
+                            i {
+                                width: 5rem;
+                                font-size: 20px;
+                                padding: 1rem;
+                                vertical-align: middle; 
+                            }
+                        }
+                    }
+
+                    .direct {
+                        padding: 1.5rem;
+                    }
+
+                    .logout {
+                        padding: 1.5rem;
+
+                        button {
+                            margin: 0 auto;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

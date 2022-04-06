@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.2;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    color: var(--lightColor);
+    background-color: var(--darkColor);
+    overflow-x: hidden;
+}
+
+ul { list-style-type: none; }
+
+a { text-decoration: none; color: var(--lightColor); }

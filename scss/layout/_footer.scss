@@ -1,0 +1,65 @@
+.footer {
+    max-width: 980px;
+    margin: 8rem auto 0;
+
+
+    &-logo {
+        margin-left: 2.8rem;
+
+        a {
+            font-size: 2.2rem;
+            margin-right: 2rem;
+        }
+    }
+
+    &-link {
+        margin-left: 1.5rem;
+        margin-bottom: 3.5rem;
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                margin-top: 1rem;
+
+                a {
+                    font-size: 1.3rem;
+                    border-bottom: 1px solid transparent;
+                    color: var(--mediumColor);
+                    transition: all 0.1s;
+        
+                    &:hover {
+                        border-bottom: 1px solid var(--mediumColor);
+                    }
+                }
+            }
+        }
+    }
+
+    &-code {
+        margin-left: 1.5rem;
+        margin-bottom: 3.5rem;
+
+        a {
+            font-size: 1.3rem;
+            padding: 0.6rem;
+            border: 1px solid var(--mediumColor);
+            color: var(--mediumColor);
+        }
+    }
+
+    &-copyright {
+        margin-left: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        p {
+            font-size: 1.1rem;
+            color: var(--mediumColor);
+
+        }
+    }
+}
